@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+		/* This is for the wen to be responsive in any devices */
+		@media (max-width: 768px) {
+            .adjustable-image {
+                width: 100px;
+                height: auto;
+            }
+
+            .left-container,
+            .right-container {
+                font-size: 14px;
+            }
+        }
+		
+		/* background image of the webpage */
+         body {
+            background: url('wallpaper.jpg') no-repeat center center fixed;
+			background-size: cover;
+            margin: 0; 
+            font-family: Arial, sans-serif;
+        }
+       
+	   /* home page, it111, and flex page navigation sizes and color */
+	   nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000080;
+            text-decoration: none;
+            padding: 10px 30px;
+            margin: 0 10px;
+			font-size: 30px;
+        }
+
+		/* Header and profile picture */
+        section {
+            padding: 5px;
+			font-size: 30px;
+			text-align: center;
+			color: white;
+        }
+		
+		/* color of the header */
+		h1{
+			color: #0000FF;
+		}
+		
+		/* Self introduction and hobies */
+		.container1{
+            flex: 1 ;
+            margin: 0 auto;
+            padding: 10px; 
+            border: 1px solid white;
+			box-shadow: 0 0 10px;
+			width: 80%;
+			max-width: 100%;
+			tex-align: center;
+			color: white;
+			font-size: 20px;
+        }
+		/* color for the introduction */
+		h2{
+			color: white;
+		}
+		
+		/* Social media pages sizes and color of social media */
+		.container2 {
+			padding: 10px;
+			font-size: 30px;
+			text-align: center;
+			color: #0000FF;
+		}
+		
+		/* description 8 years from now */
+		.container3{
+            flex: 1 ;
+            margin: 0 auto;
+            padding: 10px; 
+            border: 1px solid white;
+			box-shadow: 0 0 10px;
+			width: 80%;
+			max-width: 100%;
+			tex-align: center;
+			color: white;
+			font-size: 30px;
+        }
+		
+		/* size of image */
+		#profile-image {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+		
+		/* Video sizes */
+		.video-container {
+			text-align: center;
+		}
+	
+		video {
+			max-width: 80%;
+			height: auto;
+		}
+	
+		/* This is for the footer Copyright, name of Footer and sizes */
+		footer {
+			background-color: #ABEBC6;
+			padding: 5px;
+			text-align: center;
+			color: black;
+			position: absolute:
+			bottom: 0;
+			box-shadow: 0 0 5px;
+			font-size: 20px;
+			width: 100%;
+		}
+		
+		 /* Media query for screens 600px and smaller */
+        @media only screen and (max-width: 600px) {
+            header, nav, footer {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+
+        /* Media query for screens 900px and smaller */
+        @media only screen and (max-width: 900px) {
+            header, nav, footer {
+                font-size: 16px;
+            }
+			
+    </style>
+</head>
+<body>
+<header>
+    
+	 <nav>
+        <a href="index.html">Home</a>
+        <a href="IT111.html">IT111 Blog</a>
+        <a href="flex.html">Flex</a>
+    </nav>
+	
+</header>
+
+    <section>
+        <h1>Welcome to my Website!</h1>
+		<img src="Mary.jpg" alt="Profile Image" id="profile-image">
+	</section>
+	
+	<div class="container1">
+	<h4 class="text-beside-image">
+		<h2>Hi! I am Marykris Gaviola, 19 years old a first year student in Bukidnon State University.
+		 My hobbies are like listening to music, watching k-drama movies, playing volleyball, sleeping, eating and etc. </h2>
+	</div>
+	
+	<div class="container2">
+	<h3 class="text-beside-image"> 
+	 Social Media Pages </h3>
+ 	<button class="button" onclick="window.location.href='https://www.facebook.com/https://www.facebook.com/marykris.gaviola';"> <img src="fb.jpg" alt="Facebook" style="height:30px;" class="circular-image"> </button>
+	<button class="button" onclick="window.location.href='https://www.instagram.com/https://instagram.com/__marykris__?igshid=OGQ5ZDc2ODk2ZA==';"> <img src="ig.jpg" alt="Instagram" style="height:30px;" class="circular-image"> </button>
+	<button class="button" onclick="window.location.href='https://www.Youtube.com/https://youtube.com/@MarykrisGaviola?si=v0GBvYKa8HNFvaoD';"> <img src="yt.jpg" alt="YouTube" style="height:30px;" class="circular-image"> </button>
+	</div>
+
+	<div class="container3">
+	<h4 class="text-beside-image">
+	<h4> 8 years from now I will have the work that I want someday, a work that is related to IT. </h4>
+	 </div>
+	 
+	<div class="video-container">
+	<video width="680" height="460" controls>
+      <source src="8 8.1.mp4" type="video/mp4">
+	 </div>
+	
+    <footer>
+       &copy 2023 | Gaviola | All Rights Reserved
+    </footer>
+
+</body>
+</html>
